@@ -40,5 +40,5 @@ print("지오코딩에 실패한 행의 수 :",len(idx))
 df.drop(idx, inplace=True)
 df.reset_index(drop=True,inplace=True)   #인덱스 초기화
 
-df.to_csv("data/data.csv",encoding="cp949")
+df.to_csv(f"data/{csv_name}.csv",encoding="cp949")
 print("데이터 파일에 위도, 경도 컬럼이 추가되었습니다.")
