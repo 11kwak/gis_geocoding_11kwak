@@ -78,7 +78,7 @@ def geocoding_action(df):
 
     print(df.columns)
     time.sleep(1)
-    address_name = input("데이터 파일에 주소명을 담고 있는 컬럼명을 넣어주세요")
+    address_name = input("데이터 파일에 주소명을 담고 있는 컬럼명을 넣어주세요 : ")
     addr = df[f"{address_name}"]
 
     latitude_list, longitude_list = kakao_geocoding_to_list(addr)
