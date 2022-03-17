@@ -2,7 +2,7 @@ import utils.geocoding as geo
 import pandas as pd
 
 # df 설정하기
-PATH = "data/data"
+PATH = "data/kalis200"
 df = pd.read_csv(f"{PATH}.csv", encoding="cp949")
 
 # 지오코딩 함수 실행
